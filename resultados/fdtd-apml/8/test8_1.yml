@@ -1,0 +1,2499 @@
+---
+base_machine:
+  ooo_0_0:
+    cycles: 50451600
+    iq_reads: 91986035
+    iq_writes: 77929438
+    iq_fp_reads: 0
+    iq_fp_writes: 0
+    dispatch:
+      width: [27135840, 3036364, 2293231, 1638088, 16348087]
+      opclass:
+        logic: 15593809
+        addsub: 19096809
+        addsubc: 0
+        addshift: 1257223
+        sel: 465752
+        cmp: 0
+        br.cc: 5085418
+        jmp: 1201630
+        bru: 1785090
+        assist: 0
+        mf: 258307
+        ld: 13382260
+        st: 14260656
+        ld.pre: 37474
+        shiftsimple: 1398342
+        shift: 1044896
+        mul: 81306
+        bitscan: 1208
+        flags: 2840673
+        chk: 7871
+        fpu: 4
+        fp-div-sqrt: 0
+        fp-cmp: 0
+        fp-perm: 0
+        fp-cvt-i2f: 11
+        fp-cvt-f2i: 0
+        fp-cvt-f2f: 0
+        vec: 0
+        special: 130699
+      source:
+        integer: [0, 0, 69759703, 8827774, 14139460, 9392863, 1405]
+        fp: [0, 0, 232398, 14, 4, 3214426, 0]
+        st: [0, 0, 3386144, 45, 0, 29, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+    issue:
+      source:
+        integer: [0, 0, 2910491, 5464529, 72745508, 15166848, 5767]
+        fp: [0, 0, 11, 42, 174517, 3180168, 0]
+        st: [0, 0, 0, 0, 0, 203, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [20252044, 7123235, 6663480, 4612279, 11800572]
+    writeback:
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [20428294, 9978793, 8780636, 6368982, 4894905]
+    commit:
+      free_reg_recycled: 16824744
+      width: [33763259, 2141925, 1878246, 1087593, 11580587]
+      freereg:
+        pending: 18243228
+        free: 37256629
+    thread0:
+      interrupt_requests: 10
+      cpu_exit_requests: 120196
+      cycles_in_pause: 0
+      assists:
+        invalid_opcode: 0
+        exec_page_fault: 0
+        gp_fault: 0
+        ud2a: 0
+        div<byte>: 0
+        div<W16>: 0
+        div<W32>: 0
+        div<W64>: 0
+        idiv<byte>: 0
+        idiv<W16>: 0
+        idiv<W32>: 0
+        idiv<W64>: 0
+        x87_fprem: 0
+        x87_fyl2xp1: 0
+        x87_fsqrt: 0
+        x87_fsincos: 0
+        x87_frndint: 0
+        x87_fscale: 0
+        x87_fsin: 0
+        x87_fcos: 0
+        x87_fxam: 0
+        x87_f2xm1: 0
+        x87_fyl2x: 0
+        x87_fptan: 0
+        x87_fpatan: 0
+        x87_fxtract: 0
+        x87_fprem1: 0
+        x87_fld80: 0
+        x87_fstp80: 0
+        x87_fsave: 0
+        x87_frstor: 0
+        x87_finit: 0
+        x87_fclex: 0
+        x87_fxch: 0
+        x87_fnstenv: 0
+        x87_fldenv: 0
+        x87_fbstp: 0
+        x87_fbld: 0
+        x87_fnsave: 0
+        x87_fldcw: 0
+        mmx_emms: 7
+        ldmxcsr: 0
+        fxsave: 8
+        fxrstor: 9
+        int: 0
+        syscall: 0
+        sysret: 178
+        hypercall: 0
+        ptlcall: 0
+        sysenter: 0
+        iret16: 0
+        iret32: 0
+        iret64: 11382
+        sti: 0
+        cli: 0
+        enter: 0
+        cpuid: 0
+        rdtsc: 5764
+        cld: 0
+        std: 0
+        pushf: 0
+        popf: 0
+        write_segreg: 26
+        wrmsr: 10
+        rdmsr: 0
+        write_cr0: 9
+        write_cr2: 0
+        write_cr3: 29
+        write_cr4: 0
+        write_debug_reg: 0
+        ioport_in: 0
+        ioport_out: 0
+        ljmp: 0
+        ljmp_prct: 0
+        bcd_aas: 0
+        svm_check: 0
+        monitor: 0
+        mwait: 0
+        vmrun: 0
+        vmcall: 0
+        vmload: 0
+        vmsave: 0
+        stgi: 0
+        clgi: 0
+        skinit: 0
+        invlpga: 0
+        invlpg: 616
+        lmsw: 0
+        lldt: 0
+        ltr: 0
+        verr: 0
+        verw: 0
+        clts: 9
+        swapgs: 0
+        barrier: 0
+        halt: 0
+        pause: 0
+      lassists:
+        l_sti: 11740
+        l_cli: 46410
+        l_pushf: 23415
+        l_popf: 23280
+        l_io_in: 61
+        l_io_out: 52
+        l_pause: 0
+        l_popcnt: 76
+        l_x87_fist: 0
+      physreg_reads:
+        int: 214627026
+        fp: 2592433
+        st: 11233764
+        br: 5748329
+      physreg_writes:
+        int: 88871511
+        fp: 924967
+        st: 24198199
+        br: 13062171
+      rob_reads: 181328722
+      rob_writes: 59526585
+      rename_table_reads: 59230315
+      rename_table_writes: 31492938
+      reg_reads: 543180
+      reg_writes: 55621797
+      fp_reg_reads: 760452
+      fp_reg_writes: 0
+      ctx_switches: 20
+      fetch:
+        opclass:
+          logic: 12040808
+          addsub: 15107716
+          addsubc: 0
+          addshift: 934167
+          sel: 410543
+          cmp: 0
+          br.cc: 4151297
+          jmp: 911476
+          bru: 1282298
+          assist: 0
+          mf: 222029
+          ld: 10080213
+          st: 11966703
+          ld.pre: 16025
+          shiftsimple: 1040079
+          shift: 867281
+          mul: 46423
+          bitscan: 1219
+          flags: 2380859
+          chk: 9188
+          fpu: 4
+          fp-div-sqrt: 0
+          fp-cmp: 0
+          fp-perm: 0
+          fp-cvt-i2f: 11
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 0
+          special: 121558
+        width: [28199939, 2493681, 2245093, 1194046, 12755973]
+        blocks: 3296219
+        uops: 61589897
+        user_insns: 43113161
+        stop:
+          stalled: 1769297
+          icache_miss: 1943852
+          fetchq_full: 21395386
+          issueq_quota_full: 0
+          bogus_rip: 763
+          microcode_assist: 18378
+          branch_taken: 3907056
+          full_width: 12755973
+          icache_stalled: 372539
+          invalid_blocks: 749
+      frontend:
+        width: [33124638, 1909832, 1443682, 1164443, 12809015]
+        consumer_count: [4536374, 17613348, 9416961, 4008647, 682402, 1048109, 242667, 146090, 97777, 708955, 22182, 35305, 13308, 1037, 22680, 195, 211, 10899, 10984, 46, 85, 135, 10578, 20, 18, 29, 12, 17, 1, 0, 1, 0, 267, 2, 7, 2, 1, 19, 1, 1, 5, 1, 0, 1, 9, 35, 4, 10482, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        status:
+          complete: 59526585
+          fetchq_empty: 7301335
+          rob_full: 25067528
+          physregs_full: 5273035
+          ldq_full: 697
+          stq_full: 0
+        renamed:
+          none: 28033647
+          reg: 19154079
+          flags: 12574560
+          reg_and_flags: 0
+        alloc:
+          reg: 31816324
+          ldreg: 9796301
+          sfr: 11768473
+          br: 6145487
+      dispatch:
+        cluster:
+          all: 0
+        redispatch:
+          trigger_uops: 23446620
+          deadlock_flushes: 0
+          deadlock_uops_flushed: 0
+          dependent_uops: [0, 0, 3, 2, 3, 4, 4, 1, 6, 8, 5, 8, 6446, 16, 9, 54, 8, 6, 8, 14, 29, 27, 13, 47, 18, 135, 22, 89, 24, 58, 162, 30, 163, 7137, 44, 162, 546, 37, 51, 8854, 157, 25, 121, 42, 109, 27, 131, 342, 84, 3143, 1130, 671, 88, 6967, 358, 124, 146, 8872, 467, 52, 79, 742, 189, 303, 446, 3595, 286, 75, 228, 7350, 89, 459, 756, 120, 438, 434, 4335, 559, 10599, 10553, 453, 1205, 11300, 622, 726, 8600, 629, 6522, 761, 449, 7524, 2928, 158, 9442, 737, 13901, 215, 2181, 1116, 2099, 9214, 1690, 260, 2962, 19703, 23698, 956, 1870, 807, 1258, 192, 157, 1730, 466, 10380, 13589, 7840, 422, 347, 758, 554, 5523, 310, 1606, 712, 514, 20, 0, 0]
+      issue:
+        uops: 73332771
+        uipc: 1.45353
+        opclass:
+          logic: 14064357
+          addsub: 16617079
+          addsubc: 0
+          addshift: 992080
+          sel: 382968
+          cmp: 0
+          br.cc: 4291191
+          jmp: 902877
+          bru: 1764083
+          assist: 0
+          mf: 244320
+          ld: 13381371
+          st: 16097464
+          ld.pre: 15695
+          shiftsimple: 1101141
+          shift: 848026
+          mul: 53342
+          bitscan: 731
+          flags: 2463689
+          chk: 7313
+          fpu: 0
+          fp-div-sqrt: 0
+          fp-cmp: 0
+          fp-perm: 0
+          fp-cvt-i2f: 7
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 0
+          special: 105034
+        result:
+          no_fu: 8155573
+          replay: 5206603
+          misspeculated: 268050
+          refetch: 0
+          branch_mispredict: 75703
+          exception: 11411
+          complete: 67230124
+      writeback:
+        writebacks:
+          int: 46817025
+          fp: 81302
+          st: 12429726
+          br: 6898578
+      commit:
+        uops: 55621797
+        insns: 38704999
+        uipc: 1.10248
+        ipc: 0.767171
+        opclass:
+          logic: 10934588
+          addsub: 13490155
+          addsubc: 0
+          addshift: 774310
+          sel: 353760
+          cmp: 0
+          br.cc: 3691404
+          jmp: 853199
+          bru: 1203726
+          assist: 0
+          mf: 215052
+          ld: 9155037
+          st: 11018511
+          ld.pre: 15687
+          shiftsimple: 875678
+          shift: 712618
+          mul: 43489
+          bitscan: 701
+          flags: 2171866
+          chk: 6985
+          fpu: 0
+          fp-div-sqrt: 0
+          fp-cmp: 0
+          fp-perm: 0
+          fp-cvt-i2f: 7
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 0
+          special: 105034
+        result:
+          none: 34294126
+          ok: 55483544
+          exception: 10
+          skipblock: 0
+          barrier: 18047
+          smc: 0
+          memlocked: 0
+          stop: 0
+          dcache_stall: 3608508
+        fail:
+          free_list: 0
+          frontend_list: 217068
+          ready_to_dispatch_list: 59252
+          dispatched_list: 11220901
+          ready_to_issue_list: 61098
+          ready_to_store_list: 12509
+          ready_to_load_list: 6554
+          issued_list: 0
+          completed_list: 3352488
+          ready_to_writeback_list: 4852694
+          cache_miss_list: 14166674
+          tlb_miss_list: 133292
+          memory_fence_list: 0
+          ready_to_commit_queue: 0
+        setflags:
+          yes: 11311536
+          no: 23711890
+      branchpred:
+        predictions: 6345071
+        updates: 5748329
+        cond:
+          mispred: 74617
+          correct: 4216574
+        indir:
+          mispred: 612
+          correct: 11753
+        ret:
+          mispred: 474
+          correct: 890038
+        summary:
+          mispred: 75703
+          correct: 6882448
+        ras:
+          pushes: 0
+          overflows: 0
+          pops: 0
+          underflows: 0
+          annuls: 0
+      dcache:
+        dtlb_latency: [0, 0, 15, 16, 5, 48, 35, 724, 771, 877, 53020, 69266, 72505, 182813, 5346, 7168, 7883, 53232, 1279, 3665, 1043, 654, 1073, 10558, 528, 2645, 1469, 188, 92, 615, 153, 683, 302, 66, 42, 118, 29, 70, 40, 54, 30, 94, 41, 74, 28, 98, 63, 188, 48, 53, 22, 47, 44, 121, 39, 8, 38, 4, 3, 2, 2, 1, 4, 2, 4, 6, 0, 0, 4, 7, 0, 5, 3, 7, 4, 3, 4, 5, 3, 3, 6, 7, 4, 4, 2, 3, 2, 3, 2, 3, 3, 4, 6, 4, 3, 4, 0, 3, 1, 1, 1, 4, 3, 6, 1, 5, 4, 10, 9, 9, 7, 12, 4, 5, 10, 13, 19, 16, 22, 24, 25, 30, 36, 34, 26, 28, 53, 61, 65, 43, 61, 59, 72, 73, 48, 63, 67, 72, 73, 47, 79, 85, 84, 113, 70, 90, 116, 428, 115, 24, 46, 37, 39, 78, 32, 9, 10, 15, 9, 4, 5, 5, 8, 2, 5, 9, 2, 3, 2, 2, 2, 3, 2, 1, 2, 2, 2, 2, 0, 2, 2, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 2, 2, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 4, 4, 3, 0, 0, 0, 0, 0, 2, 2, 2, 2, 1, 2, 2, 1, 2, 2, 3, 2, 3, 1, 2, 2, 1, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 4, 3, 4, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 3, 3, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 2, 2, 2, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 0, 2, 2, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        itlb_latency: [18250, 2, 3, 2, 113, 0, 1, 57, 129, 42, 795, 740, 538, 0, 1, 0, 17, 1, 3, 0, 0, 0, 4, 8, 5, 1, 0, 0, 3, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        load:
+          size:
+            1 (byte): 737851
+            2 (word): 74571
+            4 (dword): 1344409
+            8 (qword): 11014948
+          datatype:
+            int: 11134178
+            float: 81272
+            vec-float: 0
+            double: 0
+            vec-double: 0
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 0
+            vec-64bit: 0
+            vec-128bit: 0
+          issue:
+            complete: 0
+            miss: 9730995
+            hit: 0
+            exception: 125
+            ordering: 0
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 295493
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 943441
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 716573
+              parallel_aliasing: 0
+          forward:
+            cache: 8456313
+            sfr: 0
+            zero: 0
+            sfr_and_cache: 2759137
+          dependency:
+            independent: 9172886
+            predicted_alias_unresolved: 295493
+            stq_address_match: 8207970
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 0
+          type:
+            aligned: 11623535
+            unaligned: 0
+            internal: 1548244
+        store:
+          size:
+            1 (byte): 569480
+            2 (word): 36296
+            4 (dword): 1389819
+            8 (qword): 13770581
+          datatype:
+            int: 12247852
+            float: 0
+            vec-float: 0
+            double: 0
+            vec-double: 0
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 0
+            vec-64bit: 0
+            vec-128bit: 0
+          issue:
+            complete: 12247852
+            miss: 0
+            hit: 0
+            exception: 144
+            ordering: 268050
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 836427
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 0
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 0
+              parallel_aliasing: 41
+          forward:
+            cache: 0
+            sfr: 0
+            zero: 12247852
+            sfr_and_cache: 0
+          dependency:
+            independent: 0
+            predicted_alias_unresolved: 0
+            stq_address_match: 0
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 0
+          type:
+            aligned: 15660790
+            unaligned: 0
+            internal: 105386
+        fence:
+          lfence: 2
+          sfence: 2
+          mfence: 244316
+        dtlb:
+          hits: 27284325
+          misses: 540880
+        itlb:
+          hits: 62112707
+          misses: 20919
+      decode:
+        x86_decode_type:
+          fast: 286499
+          complex: 13911
+          x87: 23
+          sse: 8
+          assist: 397
+        reclaim_rounds: 29
+        throughput:
+          basic_blocks: 55516
+          x86_insns: 300719
+          uops: 473311
+          bytes: 1107175
+        bb_decode_type:
+          all_insns_fast: 44414
+          some_complex_insns: 11036
+        page_crossings:
+          within_page: 0
+          crosses_page: 0
+        bbcache:
+          count: 3290
+          inserts: 55516
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 64964
+            dirty: 0
+            empty: 0
+        pagecache:
+          count: 1
+          inserts: 29
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 0
+            dirty: 0
+            empty: 0
+  core_0_cont:
+    annul: 0
+    queueFull: 23258521
+    icache_latency: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13613137]
+    dcache_latency: [0, 450765, 959714, 991076, 15229717, 170639, 107852, 54410, 38601, 33278, 150943, 70227, 22890, 35173, 59549, 18192, 29885, 35857, 49388, 62130, 45123, 77018, 109900, 99997, 92008, 108741, 116888, 113727, 93762, 85175, 127083, 111073, 156955, 166386, 1107588, 191805, 157849, 156638, 177494, 335168, 373845, 236571, 117421, 160974, 157396, 110168, 145105, 142372, 72015, 86030, 99062, 57793, 41332, 73552, 94747, 63521, 56021, 40671, 37552, 41739, 38525, 40887, 48022, 26219, 23595, 11128, 19731, 30118, 17688, 44708, 36509, 45112, 44281, 52575, 29537, 8152, 38844, 18904, 21665, 12877, 9979, 7249, 15727, 13772, 9935, 18116, 12611, 5342, 2920, 23025, 16684, 31621, 10579, 4698, 3683, 3093, 5580, 1661, 2248, 1798, 2089, 3507, 3614, 4537, 2498, 3175, 4903, 2165, 6253, 11666, 5308, 23081, 26469, 2419, 1039, 21519, 1550, 629, 1859, 7753, 9334, 1597, 7785, 2893, 882, 3393, 2424, 3030, 4488, 6352, 9890, 67791, 29063, 244877, 1532311, 1998162, 61142, 87105, 81420, 99536, 47022, 93803, 32077, 22693, 22378, 46271, 30230, 53126, 35048, 47470, 31257, 48868, 40073, 55640, 37753, 50913, 34810, 50982, 43667, 50089, 36143, 49267, 37030, 48060, 34962, 48313, 35531, 38729, 16539, 5122, 6322, 4563, 5777, 3660, 4111, 2362, 1968, 2830, 2264, 2138, 3309, 9012, 1119, 531, 716, 8035, 897, 1629, 386, 1279, 382, 312, 461, 496, 1196, 1366, 230, 1213, 110, 8601]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 0
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 0
+          write: 0
+      stall:
+        read:
+          dependency: 3767517
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 8037926
+          cache_port: 0
+          buffer_full: 0
+  L1_I_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 0
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 0
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 0]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 0, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+  L1_D_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 10569175
+            forward: 0
+          write:
+            hit: 2202099
+            forward: 0
+        miss:
+          read: 117146
+          write: 709108
+      stall:
+        read:
+          dependency: 1893417
+          cache_port: 1487
+          buffer_full: 0
+        write:
+          dependency: 245953
+          cache_port: 19479
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 826254]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 2202099, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 2202099, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 4095837
+          Shared: 0
+  L2_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 88081
+            forward: 0
+          write:
+            hit: 2230770
+            forward: 0
+        miss:
+          read: 29065
+          write: 680437
+      stall:
+        read:
+          dependency: 0
+          cache_port: 3
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 905
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 709502]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 2230770, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 2230770, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 2318851
+          Shared: 0
+  L3_0:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 3122
+            forward: 0
+          write:
+            hit: 2237764
+            forward: 0
+        miss:
+          read: 25943
+          write: 673443
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  L3_1:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 0
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 0
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  MEM_0:
+    bank_access: [17137, 17018, 16981, 16985, 16948, 16908, 16919, 16903, 16959, 16942, 16946, 16952, 16974, 16960, 16948, 16967, 17007, 16945, 16926, 16931, 16930, 16935, 16894, 16911, 16952, 16873, 16934, 16948, 16944, 16932, 16934, 16958, 17012, 16942, 16944, 16947, 16948, 16943, 16918, 16938, 16982, 16930, 16975, 16958, 16957, 16919, 16953, 16941, 17006, 16961, 16916, 16947, 16978, 16975, 16943, 16955, 16983, 16953, 16951, 16974, 16945, 16910, 16932, 16927]
+    bank_read: [564, 427, 421, 420, 429, 390, 395, 394, 439, 404, 411, 426, 426, 425, 397, 407, 454, 399, 384, 386, 389, 373, 358, 364, 432, 346, 388, 415, 399, 395, 405, 419, 469, 406, 396, 409, 400, 368, 380, 391, 430, 379, 420, 388, 401, 378, 386, 377, 464, 409, 370, 409, 421, 403, 388, 402, 433, 403, 403, 414, 406, 371, 391, 397]
+    bank_write: [10503, 10545, 10526, 10534, 10506, 10509, 10507, 10506, 10499, 10515, 10516, 10503, 10520, 10511, 10526, 10528, 10520, 10524, 10522, 10524, 10521, 10537, 10524, 10529, 10504, 10518, 10522, 10511, 10515, 10514, 10512, 10515, 10514, 10512, 10526, 10522, 10529, 10543, 10523, 10529, 10528, 10534, 10529, 10545, 10534, 10522, 10537, 10543, 10521, 10532, 10531, 10519, 10528, 10537, 10531, 10530, 10519, 10523, 10524, 10532, 10518, 10526, 10522, 10514]
+    bank_update: [6070, 6046, 6034, 6031, 6013, 6009, 6017, 6003, 6021, 6023, 6019, 6023, 6028, 6024, 6025, 6032, 6033, 6022, 6020, 6021, 6020, 6025, 6012, 6018, 6016, 6009, 6024, 6022, 6030, 6023, 6017, 6024, 6029, 6024, 6022, 6016, 6019, 6032, 6015, 6018, 6024, 6017, 6026, 6025, 6022, 6019, 6030, 6021, 6021, 6020, 6015, 6019, 6029, 6035, 6024, 6023, 6031, 6027, 6024, 6028, 6021, 6013, 6019, 6016]
+  split_bus_L3_0_L2_00:
+    addr_bus_cycles: 17641632
+    data_bus_cycles: 17641632
+    bus_not_ready: 4728523
+    broadcast:
+      read: 29065
+      write: 2911207
+      update: 0
+    broadcast_cycles:
+      read: 3067237
+      write: 116066601
+      update: 0
+simulator:
+  tags: [xeon, john-programmer.(none), 2013-05-09, kernel]
+  version:
+    git_commit: 0000000
+    git_branch: UNKNOWN
+    git_timestamp: UNKNOWN
+    build_timestamp: Apr 29 2013 19:37:35
+    build_hostname: BUILDHOST
+    build_compiler: gcc-4.7
+  run:
+    timestamp: 1368124701
+    hostname: john-programmer.(none)
+    native_hz: 2501000000
+    seconds: 420
+  performance:
+    cycles_per_sec: 274291
+    commits_per_sec: 196178
+---
+base_machine:
+  ooo_0_0:
+    cycles: 64750859
+    iq_reads: 110116502
+    iq_writes: 77998695
+    iq_fp_reads: 0
+    iq_fp_writes: 0
+    dispatch:
+      width: [40822135, 2293478, 5125910, 629339, 15891345]
+      opclass:
+        logic: 6819162
+        addsub: 20791695
+        addsubc: 0
+        addshift: 4046882
+        sel: 28479
+        cmp: 0
+        br.cc: 5159197
+        jmp: 7763
+        bru: 750090
+        assist: 0
+        mf: 471
+        ld: 14507009
+        st: 7791863
+        ld.pre: 0
+        shiftsimple: 27087
+        shift: 8164
+        mul: 1552
+        bitscan: 290
+        flags: 922638
+        chk: 1612
+        fpu: 14157992
+        fp-div-sqrt: 2826526
+        fp-cmp: 21
+        fp-perm: 0
+        fp-cvt-i2f: 148701
+        fp-cvt-f2i: 0
+        fp-cvt-f2f: 0
+        vec: 1496
+        special: 5
+      source:
+        integer: [0, 0, 27416379, 8106277, 19791849, 18451968, 1192]
+        fp: [0, 0, 30846872, 611118, 2995623, 9965384, 0]
+        st: [0, 0, 1542, 0, 0, 0, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+    issue:
+      source:
+        integer: [0, 0, 615826, 7545526, 49499048, 21613385, 1505]
+        fp: [0, 0, 2571739, 880546, 32359030, 10999323, 0]
+        st: [0, 0, 0, 0, 0, 0, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [21235461, 20634048, 10404242, 4066430, 8422026]
+    writeback:
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [24336020, 19333920, 10966756, 4866258, 5259253]
+    commit:
+      free_reg_recycled: 28681697
+      width: [41752909, 2241460, 5127700, 819044, 14821094]
+      freereg:
+        pending: 29470787
+        free: 44870795
+    thread0:
+      interrupt_requests: 7
+      cpu_exit_requests: 130139
+      cycles_in_pause: 0
+      assists:
+        invalid_opcode: 0
+        exec_page_fault: 0
+        gp_fault: 0
+        ud2a: 0
+        div<byte>: 0
+        div<W16>: 0
+        div<W32>: 0
+        div<W64>: 0
+        idiv<byte>: 0
+        idiv<W16>: 0
+        idiv<W32>: 0
+        idiv<W64>: 0
+        x87_fprem: 0
+        x87_fyl2xp1: 0
+        x87_fsqrt: 0
+        x87_fsincos: 0
+        x87_frndint: 0
+        x87_fscale: 0
+        x87_fsin: 0
+        x87_fcos: 0
+        x87_fxam: 0
+        x87_f2xm1: 0
+        x87_fyl2x: 0
+        x87_fptan: 0
+        x87_fpatan: 0
+        x87_fxtract: 0
+        x87_fprem1: 0
+        x87_fld80: 0
+        x87_fstp80: 0
+        x87_fsave: 0
+        x87_frstor: 0
+        x87_finit: 0
+        x87_fclex: 0
+        x87_fxch: 0
+        x87_fnstenv: 0
+        x87_fldenv: 0
+        x87_fbstp: 0
+        x87_fbld: 0
+        x87_fnsave: 0
+        x87_fldcw: 0
+        mmx_emms: 0
+        ldmxcsr: 0
+        fxsave: 0
+        fxrstor: 0
+        int: 0
+        syscall: 184
+        sysret: 0
+        hypercall: 0
+        ptlcall: 0
+        sysenter: 0
+        iret16: 0
+        iret32: 0
+        iret64: 0
+        sti: 0
+        cli: 0
+        enter: 0
+        cpuid: 49
+        rdtsc: 42
+        cld: 0
+        std: 0
+        pushf: 0
+        popf: 0
+        write_segreg: 0
+        wrmsr: 0
+        rdmsr: 0
+        write_cr0: 0
+        write_cr2: 0
+        write_cr3: 0
+        write_cr4: 0
+        write_debug_reg: 0
+        ioport_in: 0
+        ioport_out: 0
+        ljmp: 0
+        ljmp_prct: 0
+        bcd_aas: 0
+        svm_check: 0
+        monitor: 0
+        mwait: 0
+        vmrun: 0
+        vmcall: 0
+        vmload: 0
+        vmsave: 0
+        stgi: 0
+        clgi: 0
+        skinit: 0
+        invlpga: 0
+        invlpg: 0
+        lmsw: 0
+        lldt: 0
+        ltr: 0
+        verr: 0
+        verw: 0
+        clts: 0
+        swapgs: 0
+        barrier: 0
+        halt: 0
+        pause: 0
+      lassists:
+        l_sti: 0
+        l_cli: 0
+        l_pushf: 0
+        l_popf: 0
+        l_io_in: 0
+        l_io_out: 0
+        l_pause: 0
+        l_popcnt: 0
+        l_x87_fist: 0
+      physreg_reads:
+        int: 211389878
+        fp: 77501216
+        st: 7220548
+        br: 5755478
+      physreg_writes:
+        int: 56342132
+        fp: 71339014
+        st: 14945350
+        br: 11764059
+      rob_reads: 227046827
+      rob_writes: 75832777
+      rename_table_reads: 75870923
+      rename_table_writes: 41607141
+      reg_reads: 689400
+      reg_writes: 74368789
+      fp_reg_reads: 965160
+      fp_reg_writes: 0
+      ctx_switches: 11357
+      fetch:
+        opclass:
+          logic: 6569694
+          addsub: 20658534
+          addsubc: 0
+          addshift: 3846194
+          sel: 28929
+          cmp: 0
+          br.cc: 5181704
+          jmp: 10890
+          bru: 724962
+          assist: 0
+          mf: 621
+          ld: 14079794
+          st: 7975402
+          ld.pre: 0
+          shiftsimple: 28733
+          shift: 8073
+          mul: 1647
+          bitscan: 349
+          flags: 898221
+          chk: 1850
+          fpu: 13867622
+          fp-div-sqrt: 2716696
+          fp-cmp: 23
+          fp-perm: 0
+          fp-cvt-i2f: 149577
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 1926
+          special: 9
+        width: [39918767, 2584052, 5073941, 651680, 15516119]
+        blocks: 3711809
+        uops: 76751450
+        user_insns: 45139509
+        stop:
+          stalled: 10047
+          icache_miss: 1217618
+          fetchq_full: 43154087
+          issueq_quota_full: 0
+          bogus_rip: 49
+          microcode_assist: 520
+          branch_taken: 5130474
+          full_width: 15516119
+          icache_stalled: 45793
+          invalid_blocks: 48
+      frontend:
+        width: [41331932, 2315152, 5145672, 651523, 15317928]
+        consumer_count: [4939826, 42757983, 7109114, 5201731, 30790, 30728, 526015, 742, 533, 450, 8397, 519757, 60, 4106, 16, 17, 25, 262198, 45, 15, 10, 60, 31, 2, 1, 7, 1, 72, 5, 2, 21, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        status:
+          complete: 75832777
+          fetchq_empty: 1375421
+          rob_full: 45466930
+          physregs_full: 2601928
+          ldq_full: 0
+          stq_full: 0
+        renamed:
+          none: 34225636
+          reg: 30080896
+          flags: 12093088
+          reg_and_flags: 0
+        alloc:
+          reg: 48348161
+          ldreg: 13962066
+          sfr: 7660999
+          br: 5861551
+      dispatch:
+        cluster:
+          all: 0
+        redispatch:
+          trigger_uops: 2472462
+          deadlock_flushes: 0
+          deadlock_uops_flushed: 0
+          dependent_uops: [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 4, 0, 0, 3, 2, 0, 0, 2, 0, 1, 0, 0, 1, 1, 1, 2, 3, 2, 2, 1, 0, 1, 1, 1, 2, 1, 0, 0, 1, 0, 0, 0, 2, 29, 2, 3, 0, 1, 1, 0, 1, 0, 1, 9, 0, 2, 8, 0, 1, 0, 7, 4, 1, 1, 6, 0, 4, 0, 6, 1, 8, 1, 6, 3, 8, 9, 11, 1, 0, 7, 8, 20, 3, 4, 1, 1, 1, 0, 1, 3, 0, 47, 2, 3, 19, 2, 0, 0, 1, 4, 6, 5, 6, 15, 342, 5, 6, 1, 0, 5, 5, 10, 0, 68, 8, 19, 2, 45, 1682, 7, 1, 983, 16359, 0, 0, 0]
+      issue:
+        uops: 82827282
+        uipc: 1.27917
+        opclass:
+          logic: 6782726
+          addsub: 20731966
+          addsubc: 0
+          addshift: 4033732
+          sel: 27294
+          cmp: 0
+          br.cc: 5127795
+          jmp: 4828
+          bru: 748665
+          assist: 0
+          mf: 442
+          ld: 16323619
+          st: 11147908
+          ld.pre: 0
+          shiftsimple: 24545
+          shift: 7356
+          mul: 1116
+          bitscan: 168
+          flags: 917030
+          chk: 1525
+          fpu: 13974079
+          fp-div-sqrt: 2824397
+          fp-cmp: 1
+          fp-perm: 0
+          fp-cvt-i2f: 147194
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 895
+          special: 0
+        result:
+          no_fu: 4366582
+          replay: 4802674
+          misspeculated: 19880
+          refetch: 0
+          branch_mispredict: 18958
+          exception: 1
+          complete: 77029952
+      writeback:
+        writebacks:
+          int: 28076531
+          fp: 35662808
+          st: 7284351
+          br: 5879528
+      commit:
+        uops: 74368789
+        insns: 43689884
+        uipc: 1.14854
+        ipc: 0.674738
+        opclass:
+          logic: 6318164
+          addsub: 20221426
+          addsubc: 0
+          addshift: 3746710
+          sel: 26902
+          cmp: 0
+          br.cc: 5053078
+          jmp: 3994
+          bru: 698406
+          assist: 0
+          mf: 196
+          ld: 13750793
+          st: 7230182
+          ld.pre: 0
+          shiftsimple: 22630
+          shift: 6503
+          mul: 848
+          bitscan: 93
+          flags: 864239
+          chk: 1495
+          fpu: 13627203
+          fp-div-sqrt: 2662400
+          fp-cmp: 1
+          fp-perm: 0
+          fp-cvt-i2f: 144026
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 660
+          special: 0
+        result:
+          none: 48012242
+          ok: 74238368
+          exception: 11160
+          skipblock: 0
+          barrier: 275
+          smc: 0
+          memlocked: 0
+          stop: 0
+          dcache_stall: 1490974
+        fail:
+          free_list: 0
+          frontend_list: 86957
+          ready_to_dispatch_list: 18829
+          dispatched_list: 7951644
+          ready_to_issue_list: 5087
+          ready_to_store_list: 27837
+          ready_to_load_list: 1221
+          issued_list: 0
+          completed_list: 7101279
+          ready_to_writeback_list: 8071540
+          cache_miss_list: 1320376
+          tlb_miss_list: 364856
+          memory_fence_list: 0
+          ready_to_commit_queue: 0
+        setflags:
+          yes: 11344542
+          no: 42050268
+      branchpred:
+        predictions: 5917556
+        updates: 5755478
+        cond:
+          mispred: 17183
+          correct: 5110612
+        indir:
+          mispred: 1025
+          correct: 439
+        ret:
+          mispred: 750
+          correct: 2614
+        summary:
+          mispred: 18958
+          correct: 5862330
+        ras:
+          pushes: 0
+          overflows: 0
+          pops: 0
+          underflows: 0
+          annuls: 0
+      dcache:
+        dtlb_latency: [0, 0, 2, 2, 0, 9, 0, 0, 1, 15, 42, 76, 133, 390, 78253, 79249, 70244, 312248, 608, 2742, 963, 1133, 680, 3159, 382, 224, 1340, 440, 545, 1084, 213, 116, 90, 1317, 171, 1315, 205, 51, 77, 90, 1066, 2007, 1570, 202, 310, 476, 8071, 8945, 574, 887, 14580, 15058, 14673, 1502, 1755, 65, 97, 1573, 2220, 736, 2, 10, 3, 11, 1005, 1, 0, 1, 9, 1, 9, 1003, 2, 0, 1, 11, 3, 11, 1002, 0, 7, 0, 8, 0, 7, 1002, 1, 9, 1, 13, 6, 9, 996, 5, 11, 23, 9, 3, 11, 987, 2, 8, 17, 8, 0, 10, 989, 15, 333, 186, 342, 337, 343, 1154, 331, 345, 18, 3, 2, 180, 1170, 173, 7, 344, 338, 334, 350, 1167, 335, 345, 34, 12, 8, 173, 1165, 12, 16, 186, 338, 338, 334, 1164, 5, 18, 364, 520, 173, 1120, 37, 19, 31, 57, 17, 40, 25, 21, 16, 33, 49, 40, 8, 3, 18, 14, 14, 27, 1, 2, 3, 4, 6, 14, 25, 0, 7, 1, 0, 6, 24, 7, 1, 3, 0, 2, 2, 7, 1, 0, 0, 0, 1, 0, 7, 0, 3, 0, 0, 0, 0, 7, 0, 3, 0, 0, 0, 0, 7, 10, 70, 39, 75, 76, 75, 45, 76, 78, 0, 0, 0, 49, 42, 42, 2, 69, 75, 76, 73, 38, 76, 78, 0, 0, 0, 38, 39, 1, 2, 38, 76, 76, 76, 38, 0, 6, 78, 111, 36, 0, 0, 0, 2, 1, 0, 0, 0, 0, 1, 2, 0, 0, 1, 0, 0, 0, 2, 1, 0, 1, 0, 0, 0, 2, 0, 0, 1, 0, 0, 9, 2, 1, 0, 1, 0, 1, 1, 1, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 3, 0, 0, 3, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        itlb_latency: [1225, 1, 1, 3, 504, 0, 1, 2, 9, 0, 82, 15, 11, 71, 28, 74, 470, 0, 2, 0, 2, 10, 109, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 11, 1, 0, 1, 1, 0, 20, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 30, 1, 2, 1, 0, 0, 0, 1, 1, 0, 0, 5, 5, 0, 0, 1, 0, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        load:
+          size:
+            1 (byte): 22800
+            2 (word): 4584
+            4 (dword): 31103
+            8 (qword): 16058241
+          datatype:
+            int: 2202817
+            float: 151
+            vec-float: 0
+            double: 11593292
+            vec-double: 605430
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 196
+            vec-64bit: 0
+            vec-128bit: 76
+          issue:
+            complete: 0
+            miss: 14401233
+            hit: 0
+            exception: 2350
+            ordering: 0
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 12092
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 1702674
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 0
+              parallel_aliasing: 0
+          forward:
+            cache: 12531937
+            sfr: 0
+            zero: 0
+            sfr_and_cache: 1870025
+          dependency:
+            independent: 12531937
+            predicted_alias_unresolved: 12091
+            stq_address_match: 3746253
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 1
+          type:
+            aligned: 16115999
+            unaligned: 0
+            internal: 729
+        store:
+          size:
+            1 (byte): 3838
+            2 (word): 208
+            4 (dword): 8667
+            8 (qword): 10386269
+          datatype:
+            int: 625044
+            float: 4
+            vec-float: 445
+            double: 1656747
+            vec-double: 5008954
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 0
+            vec-64bit: 0
+            vec-128bit: 0
+          issue:
+            complete: 7291194
+            miss: 0
+            hit: 0
+            exception: 94324
+            ordering: 19880
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 9392
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 0
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 0
+              parallel_aliasing: 1
+          forward:
+            cache: 0
+            sfr: 0
+            zero: 7291194
+            sfr_and_cache: 0
+          dependency:
+            independent: 0
+            predicted_alias_unresolved: 0
+            stq_address_match: 0
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 0
+          type:
+            aligned: 10398982
+            unaligned: 0
+            internal: 0
+        fence:
+          lfence: 0
+          sfence: 1
+          mfence: 441
+        dtlb:
+          hits: 26514981
+          misses: 955817
+        itlb:
+          hits: 77007449
+          misses: 2878
+      decode:
+        x86_decode_type:
+          fast: 54621
+          complex: 619
+          x87: 0
+          sse: 10530
+          assist: 226
+        reclaim_rounds: 0
+        throughput:
+          basic_blocks: 12751
+          x86_insns: 65509
+          uops: 103475
+          bytes: 284936
+        bb_decode_type:
+          all_insns_fast: 12226
+          some_complex_insns: 520
+        page_crossings:
+          within_page: 0
+          crosses_page: 0
+        bbcache:
+          count: 3303
+          inserts: 12751
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 0
+            dirty: 0
+            empty: 0
+        pagecache:
+          count: 1
+          inserts: 1
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 0
+            dirty: 0
+            empty: 0
+  core_0_cont:
+    annul: 0
+    queueFull: 26584322
+    icache_latency: [3, 7070286, 141, 3794, 666234, 24, 24, 22, 17, 18, 18178, 16, 7, 6, 8, 4, 5, 7, 5, 13, 5, 10, 6, 10, 10, 7, 8, 6, 8, 6, 10, 7, 6, 7, 1579, 84, 46, 48, 52, 50, 51, 54, 24, 24, 23, 13, 14, 18, 14, 13, 13, 7, 13, 6, 16, 9, 11, 7, 7, 6, 5, 13, 4, 11, 20, 13, 9, 12, 9, 8, 8, 13, 7, 17, 15, 11, 15, 12, 10, 11, 12, 12, 18, 17, 13, 14, 16, 9, 15, 17, 20, 20, 16, 20, 8, 12, 17, 23, 23, 20, 23, 30, 18, 25, 24, 25, 34, 30, 20, 42, 36, 30, 35, 49, 32, 42, 29, 41, 41, 55, 58, 60, 80, 81, 84, 71, 106, 102, 53, 35, 27, 15, 11, 11, 11890, 461, 247, 250, 245, 272, 288, 229, 95, 71, 59, 65, 45, 38, 27, 13, 18, 18, 23, 8, 11, 5, 15, 6, 5, 2, 4, 2, 1, 4, 0, 0, 2, 2, 2, 0, 1, 2, 1, 2, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 3, 1, 0, 2, 1, 2, 0, 0, 0, 1, 1, 0, 2, 0, 12594354]
+    dcache_latency: [340, 400267, 935910, 1028023, 22898346, 50564, 25549, 198985, 39702, 32333, 60367, 56966, 34253, 184392, 41338, 351371, 29102, 26662, 144637, 12475, 20338, 24226, 35172, 8741, 14490, 57417, 10113, 36276, 44062, 17132, 53002, 37464, 56798, 84991, 643458, 157197, 100552, 70402, 63451, 154667, 352048, 102207, 201188, 9530, 43552, 168514, 48791, 42479, 66830, 55931, 94600, 16072, 30728, 27197, 55782, 37327, 1164, 26767, 27245, 49234, 33638, 1388, 25035, 25173, 49140, 33632, 626, 24684, 25360, 56277, 32738, 547, 26179, 25048, 49730, 33147, 7633, 25662, 25713, 50411, 33225, 537, 46721, 222020, 52880, 33408, 354521, 25373, 26078, 49280, 201069, 561, 25634, 358930, 49986, 32888, 1196, 193615, 25675, 49266, 366178, 724, 25154, 32313, 49689, 49434, 16662, 543146, 105403, 57474, 412010, 789020, 898479, 398, 509231, 4581, 164, 7347, 308, 939, 751, 515905, 216, 486, 7575, 316, 294, 413, 515995, 589, 581, 8770, 2559, 2671, 583267, 3665, 3725, 26239, 1448, 7541, 4100, 1054, 5242, 390, 550, 377, 562, 650, 850, 179, 136, 251, 236, 100, 142, 36, 48, 30, 55, 38, 43, 98, 37, 6, 6, 80, 14, 116, 79, 17, 6, 55, 10, 1, 15, 19, 5, 200, 47, 18, 68, 33, 6, 352, 634, 98, 16, 2, 180, 21, 37, 80, 159, 39, 32, 20, 186, 68, 118, 1667]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 7070224
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 372314
+          write: 0
+      stall:
+        read:
+          dependency: 7847387
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 5119005
+          cache_port: 0
+          buffer_full: 0
+  L1_I_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 335060
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 34640
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 1
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 34640]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 0, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+  L1_D_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 13295213
+            forward: 0
+          write:
+            hit: 2095202
+            forward: 0
+        miss:
+          read: 666687
+          write: 6149
+      stall:
+        read:
+          dependency: 771594
+          cache_port: 127
+          buffer_full: 0
+        write:
+          dependency: 88712
+          cache_port: 342
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 672836]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 2095202, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [7, 0, 2095202, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 7
+          Modified: 0
+          Exclusive: 2866857
+          Shared: 0
+  L2_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 52248
+            forward: 0
+          write:
+            hit: 2101125
+            forward: 0
+        miss:
+          read: 649086
+          write: 225
+      stall:
+        read:
+          dependency: 1
+          cache_port: 10
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 225
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 649311]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 2101125, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 2101125, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 2153373
+          Shared: 0
+  L3_0:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 9291
+            forward: 0
+          write:
+            hit: 2101202
+            forward: 0
+        miss:
+          read: 639795
+          write: 147
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  L3_1:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 0
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 0
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  MEM_0:
+    bank_access: [14066, 14079, 14070, 14061, 14085, 14080, 14072, 14072, 14074, 14091, 14091, 14081, 14103, 14089, 14090, 14094, 14079, 14087, 14108, 14063, 14087, 14121, 14084, 14088, 14103, 14106, 14111, 14080, 14074, 14064, 14077, 14039, 14058, 14068, 14084, 14068, 14043, 14062, 14042, 14067, 14086, 14063, 14072, 14082, 14061, 14062, 14065, 14052, 14068, 14071, 14028, 14038, 14054, 14026, 14045, 14040, 14089, 14068, 14074, 14059, 14067, 14068, 14050, 14060]
+    bank_read: [9995, 10004, 9995, 9986, 10003, 10010, 10002, 9997, 10003, 10013, 10015, 10003, 10022, 10009, 10012, 10011, 10002, 10009, 10032, 9991, 10009, 10046, 10005, 10012, 10028, 10032, 10033, 10009, 10002, 9990, 10001, 9964, 9980, 9994, 9998, 9982, 9967, 9991, 9968, 9994, 10013, 9991, 9997, 10007, 9991, 9985, 9993, 9983, 9991, 9997, 9961, 9965, 9978, 9957, 9972, 9964, 10009, 9990, 9997, 9985, 9989, 9994, 9977, 9990]
+    bank_write: [6, 3, 4, 2, 3, 1, 1, 1, 2, 1, 1, 2, 2, 3, 3, 3, 6, 3, 1, 1, 2, 2, 4, 2, 3, 1, 3, 2, 2, 1, 1, 1, 1, 2, 2, 4, 2, 2, 3, 2, 2, 4, 2, 2, 2, 2, 1, 1, 3, 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 3, 3, 2, 2, 4]
+    bank_update: [4065, 4072, 4071, 4073, 4079, 4069, 4069, 4074, 4069, 4077, 4075, 4076, 4079, 4077, 4075, 4080, 4071, 4075, 4075, 4071, 4076, 4073, 4075, 4074, 4072, 4073, 4075, 4069, 4070, 4073, 4075, 4074, 4077, 4072, 4084, 4082, 4074, 4069, 4071, 4071, 4071, 4068, 4073, 4073, 4068, 4075, 4071, 4068, 4074, 4072, 4065, 4071, 4074, 4067, 4068, 4074, 4078, 4076, 4075, 4071, 4075, 4072, 4071, 4066]
+  split_bus_L3_0_L2_00:
+    addr_bus_cycles: 16502610
+    data_bus_cycles: 16502610
+    bus_not_ready: 4169860
+    broadcast:
+      read: 649086
+      write: 2101349
+      update: 0
+    broadcast_cycles:
+      read: 74531754
+      write: 33648035
+      update: 0
+simulator:
+  tags: [xeon, john-programmer.(none), 2013-05-09, user]
+  version:
+    git_commit: 0000000
+    git_branch: UNKNOWN
+    git_timestamp: UNKNOWN
+    build_timestamp: Apr 29 2013 19:37:35
+    build_hostname: BUILDHOST
+    build_compiler: gcc-4.7
+  run:
+    timestamp: 1368124701
+    hostname: john-programmer.(none)
+    native_hz: 2501000000
+    seconds: 420
+  performance:
+    cycles_per_sec: 274291
+    commits_per_sec: 196178
+---
+base_machine:
+  ooo_0_0:
+    cycles: 115202459
+    iq_reads: 202102537
+    iq_writes: 155928133
+    iq_fp_reads: 0
+    iq_fp_writes: 0
+    dispatch:
+      width: [67957975, 5329842, 7419141, 2267427, 32239432]
+      opclass:
+        logic: 22412971
+        addsub: 39888504
+        addsubc: 0
+        addshift: 5304105
+        sel: 494231
+        cmp: 0
+        br.cc: 10244615
+        jmp: 1209393
+        bru: 2535180
+        assist: 0
+        mf: 258778
+        ld: 27889269
+        st: 22052519
+        ld.pre: 37474
+        shiftsimple: 1425429
+        shift: 1053060
+        mul: 82858
+        bitscan: 1498
+        flags: 3763311
+        chk: 9483
+        fpu: 14157996
+        fp-div-sqrt: 2826526
+        fp-cmp: 21
+        fp-perm: 0
+        fp-cvt-i2f: 148712
+        fp-cvt-f2i: 0
+        fp-cvt-f2f: 0
+        vec: 1496
+        special: 130704
+      source:
+        integer: [0, 0, 97176082, 16934051, 33931309, 27844831, 2597]
+        fp: [0, 0, 31079270, 611132, 2995627, 13179810, 0]
+        st: [0, 0, 3387686, 45, 0, 29, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+    issue:
+      source:
+        integer: [0, 0, 3526317, 13010055, 122244556, 36780233, 7272]
+        fp: [0, 0, 2571750, 880588, 32533547, 14179491, 0]
+        st: [0, 0, 0, 0, 0, 203, 0]
+        br: [0, 0, 0, 0, 0, 0, 0]
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [41487505, 27757283, 17067722, 8678709, 20222598]
+    writeback:
+      width:
+        int0: [0, 0, 0, 0, 0]
+        int1: [0, 0, 0, 0, 0]
+        fp: [0, 0, 0, 0, 0]
+        ld: [0, 0, 0, 0, 0]
+        all: [44764314, 29312713, 19747392, 11235240, 10154158]
+    commit:
+      free_reg_recycled: 45506441
+      width: [75516168, 4383385, 7005946, 1906637, 26401681]
+      freereg:
+        pending: 47714015
+        free: 82127424
+    thread0:
+      interrupt_requests: 17
+      cpu_exit_requests: 250335
+      cycles_in_pause: 0
+      assists:
+        invalid_opcode: 0
+        exec_page_fault: 0
+        gp_fault: 0
+        ud2a: 0
+        div<byte>: 0
+        div<W16>: 0
+        div<W32>: 0
+        div<W64>: 0
+        idiv<byte>: 0
+        idiv<W16>: 0
+        idiv<W32>: 0
+        idiv<W64>: 0
+        x87_fprem: 0
+        x87_fyl2xp1: 0
+        x87_fsqrt: 0
+        x87_fsincos: 0
+        x87_frndint: 0
+        x87_fscale: 0
+        x87_fsin: 0
+        x87_fcos: 0
+        x87_fxam: 0
+        x87_f2xm1: 0
+        x87_fyl2x: 0
+        x87_fptan: 0
+        x87_fpatan: 0
+        x87_fxtract: 0
+        x87_fprem1: 0
+        x87_fld80: 0
+        x87_fstp80: 0
+        x87_fsave: 0
+        x87_frstor: 0
+        x87_finit: 0
+        x87_fclex: 0
+        x87_fxch: 0
+        x87_fnstenv: 0
+        x87_fldenv: 0
+        x87_fbstp: 0
+        x87_fbld: 0
+        x87_fnsave: 0
+        x87_fldcw: 0
+        mmx_emms: 7
+        ldmxcsr: 0
+        fxsave: 8
+        fxrstor: 9
+        int: 0
+        syscall: 184
+        sysret: 178
+        hypercall: 0
+        ptlcall: 0
+        sysenter: 0
+        iret16: 0
+        iret32: 0
+        iret64: 11382
+        sti: 0
+        cli: 0
+        enter: 0
+        cpuid: 49
+        rdtsc: 5806
+        cld: 0
+        std: 0
+        pushf: 0
+        popf: 0
+        write_segreg: 26
+        wrmsr: 10
+        rdmsr: 0
+        write_cr0: 9
+        write_cr2: 0
+        write_cr3: 29
+        write_cr4: 0
+        write_debug_reg: 0
+        ioport_in: 0
+        ioport_out: 0
+        ljmp: 0
+        ljmp_prct: 0
+        bcd_aas: 0
+        svm_check: 0
+        monitor: 0
+        mwait: 0
+        vmrun: 0
+        vmcall: 0
+        vmload: 0
+        vmsave: 0
+        stgi: 0
+        clgi: 0
+        skinit: 0
+        invlpga: 0
+        invlpg: 616
+        lmsw: 0
+        lldt: 0
+        ltr: 0
+        verr: 0
+        verw: 0
+        clts: 9
+        swapgs: 0
+        barrier: 0
+        halt: 0
+        pause: 0
+      lassists:
+        l_sti: 11740
+        l_cli: 46410
+        l_pushf: 23415
+        l_popf: 23280
+        l_io_in: 61
+        l_io_out: 52
+        l_pause: 0
+        l_popcnt: 76
+        l_x87_fist: 0
+      physreg_reads:
+        int: 426016904
+        fp: 80093649
+        st: 18454312
+        br: 11503807
+      physreg_writes:
+        int: 145213643
+        fp: 72263981
+        st: 39143549
+        br: 24826230
+      rob_reads: 408375549
+      rob_writes: 135359362
+      rename_table_reads: 135101238
+      rename_table_writes: 73100079
+      reg_reads: 1232580
+      reg_writes: 129990586
+      fp_reg_reads: 1725612
+      fp_reg_writes: 0
+      ctx_switches: 11377
+      fetch:
+        opclass:
+          logic: 18610502
+          addsub: 35766250
+          addsubc: 0
+          addshift: 4780361
+          sel: 439472
+          cmp: 0
+          br.cc: 9333001
+          jmp: 922366
+          bru: 2007260
+          assist: 0
+          mf: 222650
+          ld: 24160007
+          st: 19942105
+          ld.pre: 16025
+          shiftsimple: 1068812
+          shift: 875354
+          mul: 48070
+          bitscan: 1568
+          flags: 3279080
+          chk: 11038
+          fpu: 13867626
+          fp-div-sqrt: 2716696
+          fp-cmp: 23
+          fp-perm: 0
+          fp-cvt-i2f: 149588
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 1926
+          special: 121567
+        width: [68118706, 5077733, 7319034, 1845726, 28272092]
+        blocks: 7008028
+        uops: 138341347
+        user_insns: 88252670
+        stop:
+          stalled: 1779344
+          icache_miss: 3161470
+          fetchq_full: 64549473
+          issueq_quota_full: 0
+          bogus_rip: 812
+          microcode_assist: 18898
+          branch_taken: 9037530
+          full_width: 28272092
+          icache_stalled: 418332
+          invalid_blocks: 797
+      frontend:
+        width: [74456570, 4224984, 6589354, 1815966, 28126943]
+        consumer_count: [9476200, 60371331, 16526075, 9210378, 713192, 1078837, 768682, 146832, 98310, 709405, 30579, 555062, 13368, 5143, 22696, 212, 236, 273097, 11029, 61, 95, 195, 10609, 22, 19, 36, 13, 89, 6, 2, 22, 0, 268, 2, 7, 3, 2, 19, 1, 1, 5, 1, 0, 1, 9, 35, 4, 10482, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        status:
+          complete: 135359362
+          fetchq_empty: 8676756
+          rob_full: 70534458
+          physregs_full: 7874963
+          ldq_full: 697
+          stq_full: 0
+        renamed:
+          none: 62259283
+          reg: 49234975
+          flags: 24667648
+          reg_and_flags: 0
+        alloc:
+          reg: 80164485
+          ldreg: 23758367
+          sfr: 19429472
+          br: 12007038
+      dispatch:
+        cluster:
+          all: 0
+        redispatch:
+          trigger_uops: 25919082
+          deadlock_flushes: 0
+          deadlock_uops_flushed: 0
+          dependent_uops: [0, 0, 3, 2, 3, 4, 4, 1, 7, 9, 6, 8, 6447, 20, 9, 54, 11, 8, 8, 14, 31, 27, 14, 47, 18, 136, 23, 90, 26, 61, 164, 32, 164, 7137, 45, 163, 547, 39, 52, 8854, 157, 26, 121, 42, 109, 29, 160, 344, 87, 3143, 1131, 672, 88, 6968, 358, 125, 155, 8872, 469, 60, 79, 743, 189, 310, 450, 3596, 287, 81, 228, 7354, 89, 465, 757, 128, 439, 440, 4338, 567, 10608, 10564, 454, 1205, 11307, 630, 746, 8603, 633, 6523, 762, 450, 7524, 2929, 161, 9442, 784, 13903, 218, 2200, 1118, 2099, 9214, 1691, 264, 2968, 19708, 23704, 971, 2212, 812, 1264, 193, 157, 1735, 471, 10390, 13589, 7908, 430, 366, 760, 599, 7205, 317, 1607, 1695, 16873, 20, 0, 0]
+      issue:
+        uops: 156160053
+        uipc: 1.35553
+        opclass:
+          logic: 20847083
+          addsub: 37349045
+          addsubc: 0
+          addshift: 5025812
+          sel: 410262
+          cmp: 0
+          br.cc: 9418986
+          jmp: 907705
+          bru: 2512748
+          assist: 0
+          mf: 244762
+          ld: 29704990
+          st: 27245372
+          ld.pre: 15695
+          shiftsimple: 1125686
+          shift: 855382
+          mul: 54458
+          bitscan: 899
+          flags: 3380719
+          chk: 8838
+          fpu: 13974079
+          fp-div-sqrt: 2824397
+          fp-cmp: 1
+          fp-perm: 0
+          fp-cvt-i2f: 147201
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 895
+          special: 105034
+        result:
+          no_fu: 12522155
+          replay: 10009277
+          misspeculated: 287930
+          refetch: 0
+          branch_mispredict: 94661
+          exception: 11412
+          complete: 144260076
+      writeback:
+        writebacks:
+          int: 74893556
+          fp: 35744110
+          st: 19714077
+          br: 12778106
+      commit:
+        uops: 129990586
+        insns: 82394883
+        uipc: 1.12837
+        ipc: 0.715218
+        opclass:
+          logic: 17252752
+          addsub: 33711581
+          addsubc: 0
+          addshift: 4521020
+          sel: 380662
+          cmp: 0
+          br.cc: 8744482
+          jmp: 857193
+          bru: 1902132
+          assist: 0
+          mf: 215248
+          ld: 22905830
+          st: 18248693
+          ld.pre: 15687
+          shiftsimple: 898308
+          shift: 719121
+          mul: 44337
+          bitscan: 794
+          flags: 3036105
+          chk: 8480
+          fpu: 13627203
+          fp-div-sqrt: 2662400
+          fp-cmp: 1
+          fp-perm: 0
+          fp-cvt-i2f: 144033
+          fp-cvt-f2i: 0
+          fp-cvt-f2f: 0
+          vec: 660
+          special: 105034
+        result:
+          none: 82306368
+          ok: 129721912
+          exception: 11170
+          skipblock: 0
+          barrier: 18322
+          smc: 0
+          memlocked: 0
+          stop: 0
+          dcache_stall: 5099482
+        fail:
+          free_list: 0
+          frontend_list: 304025
+          ready_to_dispatch_list: 78081
+          dispatched_list: 19172545
+          ready_to_issue_list: 66185
+          ready_to_store_list: 40346
+          ready_to_load_list: 7775
+          issued_list: 0
+          completed_list: 10453767
+          ready_to_writeback_list: 12924234
+          cache_miss_list: 15487050
+          tlb_miss_list: 498148
+          memory_fence_list: 0
+          ready_to_commit_queue: 0
+        setflags:
+          yes: 22656078
+          no: 65762158
+      branchpred:
+        predictions: 12262627
+        updates: 11503807
+        cond:
+          mispred: 91800
+          correct: 9327186
+        indir:
+          mispred: 1637
+          correct: 12192
+        ret:
+          mispred: 1224
+          correct: 892652
+        summary:
+          mispred: 94661
+          correct: 12744778
+        ras:
+          pushes: 0
+          overflows: 0
+          pops: 0
+          underflows: 0
+          annuls: 0
+      dcache:
+        dtlb_latency: [0, 0, 17, 18, 5, 57, 35, 724, 772, 892, 53062, 69342, 72638, 183203, 83599, 86417, 78127, 365480, 1887, 6407, 2006, 1787, 1753, 13717, 910, 2869, 2809, 628, 637, 1699, 366, 799, 392, 1383, 213, 1433, 234, 121, 117, 144, 1096, 2101, 1611, 276, 338, 574, 8134, 9133, 622, 940, 14602, 15105, 14717, 1623, 1794, 73, 135, 1577, 2223, 738, 4, 11, 7, 13, 1009, 7, 0, 1, 13, 8, 9, 1008, 5, 7, 5, 14, 7, 16, 1005, 3, 13, 7, 12, 4, 9, 1005, 3, 12, 3, 16, 9, 13, 1002, 9, 14, 27, 9, 6, 12, 988, 3, 12, 20, 14, 1, 15, 993, 25, 342, 195, 349, 349, 347, 1159, 341, 358, 37, 19, 24, 204, 1195, 203, 43, 378, 364, 362, 403, 1228, 400, 388, 95, 71, 80, 246, 1213, 75, 83, 258, 411, 385, 413, 1249, 89, 131, 434, 610, 289, 1548, 152, 43, 77, 94, 56, 118, 57, 30, 26, 48, 58, 44, 13, 8, 26, 16, 19, 36, 3, 5, 5, 6, 8, 17, 27, 1, 9, 3, 2, 8, 24, 9, 3, 6, 1, 2, 2, 7, 1, 0, 0, 0, 1, 0, 9, 0, 3, 0, 0, 0, 0, 7, 0, 3, 0, 0, 0, 0, 7, 10, 73, 39, 77, 78, 75, 45, 76, 78, 0, 0, 1, 49, 43, 42, 2, 69, 77, 80, 77, 41, 76, 78, 0, 0, 0, 40, 41, 3, 4, 39, 78, 78, 77, 40, 2, 9, 80, 114, 37, 2, 2, 1, 4, 3, 2, 2, 2, 0, 1, 2, 0, 2, 5, 3, 4, 2, 3, 1, 0, 1, 0, 0, 0, 2, 0, 4, 5, 3, 3, 10, 3, 2, 1, 1, 0, 1, 1, 1, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 3, 1, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 3, 2, 2, 2, 2, 1, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 1, 3, 0, 0, 3, 0, 0, 0, 1, 0, 1, 3, 0, 1, 0, 0, 0, 2, 2, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        itlb_latency: [19475, 3, 4, 5, 617, 0, 2, 59, 138, 42, 877, 755, 549, 71, 29, 74, 487, 1, 5, 0, 2, 10, 113, 8, 5, 1, 0, 0, 7, 0, 3, 0, 0, 0, 12, 1, 0, 1, 1, 0, 32, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 34, 1, 2, 1, 0, 0, 0, 1, 1, 0, 0, 5, 5, 0, 0, 1, 0, 5, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        load:
+          size:
+            1 (byte): 760651
+            2 (word): 79155
+            4 (dword): 1375512
+            8 (qword): 27073189
+          datatype:
+            int: 13336995
+            float: 81423
+            vec-float: 0
+            double: 11593292
+            vec-double: 605430
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 196
+            vec-64bit: 0
+            vec-128bit: 76
+          issue:
+            complete: 0
+            miss: 24132228
+            hit: 0
+            exception: 2475
+            ordering: 0
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 307585
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 2646115
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 716573
+              parallel_aliasing: 0
+          forward:
+            cache: 20988250
+            sfr: 0
+            zero: 0
+            sfr_and_cache: 4629162
+          dependency:
+            independent: 21704823
+            predicted_alias_unresolved: 307584
+            stq_address_match: 11954223
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 1
+          type:
+            aligned: 27739534
+            unaligned: 0
+            internal: 1548973
+        store:
+          size:
+            1 (byte): 573318
+            2 (word): 36504
+            4 (dword): 1398486
+            8 (qword): 24156850
+          datatype:
+            int: 12872896
+            float: 4
+            vec-float: 445
+            double: 1656747
+            vec-double: 5008954
+            vec-8bit: 0
+            vec-16bit: 0
+            vec-32bit: 0
+            vec-64bit: 0
+            vec-128bit: 0
+          issue:
+            complete: 19539046
+            miss: 0
+            hit: 0
+            exception: 94468
+            ordering: 287930
+            unaligned: 0
+            replay:
+              sfr_addr_and_data_not_ready: 845819
+              sfr_addr_not_ready: 0
+              sfr_data_not_ready: 0
+              missbuf_full: 0
+              interlocked: 0
+              interlock_overflow: 0
+              fence: 0
+              bank_conflict: 0
+              dcache_stall: 0
+              parallel_aliasing: 42
+          forward:
+            cache: 0
+            sfr: 0
+            zero: 19539046
+            sfr_and_cache: 0
+          dependency:
+            independent: 0
+            predicted_alias_unresolved: 0
+            stq_address_match: 0
+            stq_address_not_ready: 0
+            fence: 0
+            mmio: 0
+          type:
+            aligned: 26059772
+            unaligned: 0
+            internal: 105386
+        fence:
+          lfence: 2
+          sfence: 3
+          mfence: 244757
+        dtlb:
+          hits: 53799306
+          misses: 1496697
+        itlb:
+          hits: 139120156
+          misses: 23797
+      decode:
+        x86_decode_type:
+          fast: 341120
+          complex: 14530
+          x87: 23
+          sse: 10538
+          assist: 623
+        reclaim_rounds: 29
+        throughput:
+          basic_blocks: 68267
+          x86_insns: 366228
+          uops: 576786
+          bytes: 1392111
+        bb_decode_type:
+          all_insns_fast: 56640
+          some_complex_insns: 11556
+        page_crossings:
+          within_page: 0
+          crosses_page: 0
+        bbcache:
+          count: 6593
+          inserts: 68267
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 64964
+            dirty: 0
+            empty: 0
+        pagecache:
+          count: 2
+          inserts: 30
+          invalidates:
+            smc: 0
+            dma: 0
+            spurious: 0
+            reclaim: 0
+            dirty: 0
+            empty: 0
+  core_0_cont:
+    annul: 0
+    queueFull: 49842843
+    icache_latency: [3, 7070286, 141, 3794, 666234, 24, 24, 22, 17, 18, 18178, 16, 7, 6, 8, 4, 5, 7, 5, 13, 5, 10, 6, 10, 10, 7, 8, 6, 8, 6, 10, 7, 6, 7, 1579, 84, 46, 48, 52, 50, 51, 54, 24, 24, 23, 13, 14, 18, 14, 13, 13, 7, 13, 6, 16, 9, 11, 7, 7, 6, 5, 13, 4, 11, 20, 13, 9, 12, 9, 8, 8, 13, 7, 17, 15, 11, 15, 12, 10, 11, 12, 12, 18, 17, 13, 14, 16, 9, 15, 17, 20, 20, 16, 20, 8, 12, 17, 23, 23, 20, 23, 30, 18, 25, 24, 25, 34, 30, 20, 42, 36, 30, 35, 49, 32, 42, 29, 41, 41, 55, 58, 60, 80, 81, 84, 71, 106, 102, 53, 35, 27, 15, 11, 11, 11890, 461, 247, 250, 245, 272, 288, 229, 95, 71, 59, 65, 45, 38, 27, 13, 18, 18, 23, 8, 11, 5, 15, 6, 5, 2, 4, 2, 1, 4, 0, 0, 2, 2, 2, 0, 1, 2, 1, 2, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 3, 1, 0, 2, 1, 2, 0, 0, 0, 1, 1, 0, 2, 0, 26207491]
+    dcache_latency: [340, 851032, 1895624, 2019099, 38128063, 221203, 133401, 253395, 78303, 65611, 211310, 127193, 57143, 219565, 100887, 369563, 58987, 62519, 194025, 74605, 65461, 101244, 145072, 108738, 106498, 166158, 127001, 150003, 137824, 102307, 180085, 148537, 213753, 251377, 1751046, 349002, 258401, 227040, 240945, 489835, 725893, 338778, 318609, 170504, 200948, 278682, 193896, 184851, 138845, 141961, 193662, 73865, 72060, 100749, 150529, 100848, 57185, 67438, 64797, 90973, 72163, 42275, 73057, 51392, 72735, 44760, 20357, 54802, 43048, 100985, 69247, 45659, 70460, 77623, 79267, 41299, 46477, 44566, 47378, 63288, 43204, 7786, 62448, 235792, 62815, 51524, 367132, 30715, 28998, 72305, 217753, 32182, 36213, 363628, 53669, 35981, 6776, 195276, 27923, 51064, 368267, 4231, 28768, 36850, 52187, 52609, 21565, 545311, 111656, 69140, 417318, 812101, 924948, 2817, 510270, 26100, 1714, 7976, 2167, 8692, 10085, 517502, 8001, 3379, 8457, 3709, 2718, 3443, 520483, 6941, 10471, 76561, 31622, 247548, 2115578, 2001827, 64867, 113344, 82868, 107077, 51122, 94857, 37319, 23083, 22928, 46648, 30792, 53776, 35898, 47649, 31393, 49119, 40309, 55740, 37895, 50949, 34858, 51012, 43722, 50127, 36186, 49365, 37067, 48066, 34968, 48393, 35545, 38845, 16618, 5139, 6328, 4618, 5787, 3661, 4126, 2381, 1973, 3030, 2311, 2156, 3377, 9045, 1125, 883, 1350, 8133, 913, 1631, 566, 1300, 419, 392, 620, 535, 1228, 1386, 416, 1281, 228, 10268]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 7070224
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 372314
+          write: 0
+      stall:
+        read:
+          dependency: 11614904
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 13156931
+          cache_port: 0
+          buffer_full: 0
+  L1_I_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 335060
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 34640
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 1
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 34640]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 0, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+  L1_D_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 23864388
+            forward: 0
+          write:
+            hit: 4297301
+            forward: 0
+        miss:
+          read: 783833
+          write: 715257
+      stall:
+        read:
+          dependency: 2665011
+          cache_port: 1614
+          buffer_full: 0
+        write:
+          dependency: 334665
+          cache_port: 19821
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 1499090]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 4297301, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [7, 0, 4297301, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 7
+          Modified: 0
+          Exclusive: 6962694
+          Shared: 0
+  L2_0:
+    annul: 0
+    queueFull: 0
+    state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 140329
+            forward: 0
+          write:
+            hit: 4331895
+            forward: 0
+        miss:
+          read: 678151
+          write: 680662
+      stall:
+        read:
+          dependency: 1
+          cache_port: 13
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 1130
+          buffer_full: 0
+    miss_state:
+      cpu: [0, 0, 0, 0, 1358813]
+    hit_state:
+      snoop:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+      cpu:
+        Modified: 0
+        Exclusive: 0
+        Shared: 0
+        Invalid: 0
+    mesi:
+      state_transition: [0, 0, 0, 0, 0, 0, 0, 0, 4331895, 0, 0, 0, 0, 0, 0, 0]
+      miss_state:
+        cpu: [0, 0, 4331895, 0]
+      hit_state:
+        snoop:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 0
+          Shared: 0
+        cpu:
+          Invalid: 0
+          Modified: 0
+          Exclusive: 4472224
+          Shared: 0
+  L3_0:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 12413
+            forward: 0
+          write:
+            hit: 4338966
+            forward: 0
+        miss:
+          read: 665738
+          write: 673590
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  L3_1:
+    annul: 0
+    queueFull: 0
+    cpurequest:
+      redirects: 0
+      count:
+        hit:
+          read:
+            hit: 0
+            forward: 0
+          write:
+            hit: 0
+            forward: 0
+        miss:
+          read: 0
+          write: 0
+      stall:
+        read:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+        write:
+          dependency: 0
+          cache_port: 0
+          buffer_full: 0
+  MEM_0:
+    bank_access: [31203, 31097, 31051, 31046, 31033, 30988, 30991, 30975, 31033, 31033, 31037, 31033, 31077, 31049, 31038, 31061, 31086, 31032, 31034, 30994, 31017, 31056, 30978, 30999, 31055, 30979, 31045, 31028, 31018, 30996, 31011, 30997, 31070, 31010, 31028, 31015, 30991, 31005, 30960, 31005, 31068, 30993, 31047, 31040, 31018, 30981, 31018, 30993, 31074, 31032, 30944, 30985, 31032, 31001, 30988, 30995, 31072, 31021, 31025, 31033, 31012, 30978, 30982, 30987]
+    bank_read: [10559, 10431, 10416, 10406, 10432, 10400, 10397, 10391, 10442, 10417, 10426, 10429, 10448, 10434, 10409, 10418, 10456, 10408, 10416, 10377, 10398, 10419, 10363, 10376, 10460, 10378, 10421, 10424, 10401, 10385, 10406, 10383, 10449, 10400, 10394, 10391, 10367, 10359, 10348, 10385, 10443, 10370, 10417, 10395, 10392, 10363, 10379, 10360, 10455, 10406, 10331, 10374, 10399, 10360, 10360, 10366, 10442, 10393, 10400, 10399, 10395, 10365, 10368, 10387]
+    bank_write: [10509, 10548, 10530, 10536, 10509, 10510, 10508, 10507, 10501, 10516, 10517, 10505, 10522, 10514, 10529, 10531, 10526, 10527, 10523, 10525, 10523, 10539, 10528, 10531, 10507, 10519, 10525, 10513, 10517, 10515, 10513, 10516, 10515, 10514, 10528, 10526, 10531, 10545, 10526, 10531, 10530, 10538, 10531, 10547, 10536, 10524, 10538, 10544, 10524, 10534, 10533, 10521, 10530, 10539, 10536, 10532, 10521, 10525, 10526, 10535, 10521, 10528, 10524, 10518]
+    bank_update: [10135, 10118, 10105, 10104, 10092, 10078, 10086, 10077, 10090, 10100, 10094, 10099, 10107, 10101, 10100, 10112, 10104, 10097, 10095, 10092, 10096, 10098, 10087, 10092, 10088, 10082, 10099, 10091, 10100, 10096, 10092, 10098, 10106, 10096, 10106, 10098, 10093, 10101, 10086, 10089, 10095, 10085, 10099, 10098, 10090, 10094, 10101, 10089, 10095, 10092, 10080, 10090, 10103, 10102, 10092, 10097, 10109, 10103, 10099, 10099, 10096, 10085, 10090, 10082]
+  split_bus_L3_0_L2_00:
+    addr_bus_cycles: 34144242
+    data_bus_cycles: 34144242
+    bus_not_ready: 8898383
+    broadcast:
+      read: 678151
+      write: 5012556
+      update: 0
+    broadcast_cycles:
+      read: 77598991
+      write: 149714636
+      update: 0
+simulator:
+  tags: [xeon, john-programmer.(none), 2013-05-09, total]
+  version:
+    git_commit: 0000000
+    git_branch: UNKNOWN
+    git_timestamp: UNKNOWN
+    build_timestamp: Apr 29 2013 19:37:35
+    build_hostname: BUILDHOST
+    build_compiler: gcc-4.7
+  run:
+    timestamp: 1368124701
+    hostname: john-programmer.(none)
+    native_hz: 2501000000
+    seconds: 420
+  performance:
+    cycles_per_sec: 274291
+    commits_per_sec: 196178
